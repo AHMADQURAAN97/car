@@ -1,0 +1,86 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-image: url('1.jpg');
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+header {
+    background-color: rgb(31, 39, 39);
+
+}
+
+/* ===========================Beg Form================== */
+#myform {
+width: 250px;
+background-color: rgba(119, 108, 108, 0.795);
+padding: 50px;
+
+margin-top: 15px;
+font-size: 15pt;
+
+}
+
+label {
+    
+    font-size: 22px;
+text-align: center;
+margin-left: 65px;
+}
+
+
+input[type=text]{
+    padding: 10px;
+    width: 200px;
+}
+select {
+    padding: 10px;
+
+    width: 225px;
+}
+
+input[type=submit] {
+    margin-top: 15px;
+    padding: 10px;
+    width: 225px;
+    color: white;
+    background-color: black;
+}
+
+/* =========================End Form=================== */
+
+
+.container-Table{
+    width: 900px;
+    background-color:#a3a3a3;
+    border-radius: 5%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+table{
+    display: block;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: auto;
+    text-align:center;
+    width: 90%;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+td{
+    width: 80%;
+    text-align:center;
+    padding-bottom: 15px;
+  
+}
+
