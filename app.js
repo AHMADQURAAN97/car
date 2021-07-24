@@ -5,16 +5,18 @@ let containerTable = document.getElementById('container-Table');
 let myForm = document.getElementById('myform');
 let tableEl = document.createElement('table');
 
+
 let cars =[];
 
 function car (cName,cModel,mYear) {
 
     this.cName = cName;
-    this.cModel ="img/"+ cModel+".png";
+    this.cModel = cModel;
     this.mYear = mYear;
     
 
 cars.push(this);
+this.cmImage = "img/"+cModel+".png";
 saveTolocalStorage ();
 }
 
@@ -32,7 +34,9 @@ car.prototype.render = function (){
   trEl1.appendChild(tdName);
 
   let displayImage = document.createElement('img');
-  displayImage.setAttribute ('src', this.cModel);
+  displayImage.setAttribute ('src', this.cmImage);
+  displayImage.setAttribute ('width', '100px');
+  displayImage.setAttribute ('height', '100px');
   
   
   let tdImage = document.createElement('td');
@@ -94,3 +98,14 @@ function readFromLocalStorage (){
     
 }
 readFromLocalStorage ();
+
+let clearButton = document.getElementById('clear');
+
+clearButton.addEventListener('submit',clearr);
+
+function clearr (event) {
+
+    // event.preventDefault();
+    localStorage.clear();
+}
+
